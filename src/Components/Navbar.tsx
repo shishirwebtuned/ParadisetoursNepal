@@ -14,7 +14,14 @@ const Navbar = () => {
                 { name: "BLOGS", href: "/blogs" },
             ],
         },
-        { name: "SPECIAL OFFER", href: "/special-offer" },
+        {
+            name: "TREKKING IN NEPAL",
+            // href: "/special-offer"
+
+            children: [
+
+            ]
+        },
         { name: "ATTRACTIONS", href: "/attractions" },
         { name: "CONTACT", href: "/contact" },
         // { name: "TRIPS", href: "/trips" },
@@ -51,7 +58,7 @@ const Navbar = () => {
                                                     {menu.name}
                                                 </Link>
                                             ) : (
-                                                <div className="nav-link">
+                                                <div className="nav-link text-white tw:hover:text-blue-500 tw:cursor-pointer">
                                                     {menu.name}
                                                 </div>
                                             )}
